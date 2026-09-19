@@ -217,6 +217,9 @@ $lang['admin_modules_enable_all_success'] = 'Tất cả các mô-đun đã đư�
 $lang['admin_modules_enable_confirm'] = 'Bạn có chắc chắn muốn kích hoạt mô-đun: <b>%s</b>?';
 $lang['admin_modules_enable_error'] = 'Không thể kích hoạt mô-đun.';
 $lang['admin_modules_enable_success'] = 'Module đã được kích hoạt thành công.';
+$lang['admin_modules_install_confirm'] = 'Bạn có chắc chắn muốn cài đặt mô-đun này không?';
+$lang['admin_modules_install_error'] = 'Cài đặt mô-đun không thành công.';
+$lang['admin_modules_install_success'] = 'Mô-đun đã được cài đặt thành công.';
 $lang['admin_modules_install_tip'] = 'Các mô-đun thêm tính năng mới cho trang web của bạn. Duyệt các mô-đun có sẵn trong <a href="%s" target="_blank" rel="noopener">thư mục mô-đun</a> hoặc tải lên tệp <b>.zip</b>.';
 
 /**
@@ -242,6 +245,9 @@ $lang['admin_plugins_enable_all_success'] = 'Tất cả các plugin đã đượ
 $lang['admin_plugins_enable_confirm'] = 'Bạn có chắc chắn muốn kích hoạt plugin: <b>%s</b>?';
 $lang['admin_plugins_enable_error'] = 'Không thể kích hoạt plugin.';
 $lang['admin_plugins_enable_success'] = 'Kích hoạt plugin thành công.';
+$lang['admin_plugins_install_confirm'] = 'Bạn có chắc chắn muốn cài đặt plugin này không?';
+$lang['admin_plugins_install_error'] = 'Cài đặt plugin không thành công.';
+$lang['admin_plugins_install_success'] = 'Plugin đã được cài đặt thành công.';
 $lang['admin_plugins_install_tip'] = 'Plugin mở rộng các tính năng hiện có với tùy chọn hoặc tích hợp bổ sung. Cài đặt từ <a href="%s" target="_blank" rel="noopener">thư mục plugin</a> hoặc tải lên tệp <b>.zip</b>.';
 
 /**
@@ -261,6 +267,9 @@ $lang['admin_themes_disable_success'] = 'Giao diện đã được vô hiệu h�
 $lang['admin_themes_enable_confirm'] = 'Bạn có chắc chắn muốn kích hoạt giao diện: <b>%s</b>?';
 $lang['admin_themes_enable_error'] = 'Không thể kích hoạt giao diện.';
 $lang['admin_themes_enable_success'] = 'Giao diện đã được kích hoạt thành công.';
+$lang['admin_themes_install_confirm'] = 'Bạn có chắc chắn muốn cài đặt giao diện này không?';
+$lang['admin_themes_install_error'] = 'Cài đặt giao diện không thành công.';
+$lang['admin_themes_install_success'] = 'Giao diện đã được cài đặt thành công.';
 $lang['admin_themes_install_tip'] = 'Giao diện thay đổi diện mạo và bố cục trang web của bạn. Chọn từ <a href="%s" target="_blank" rel="noopener">thư viện giao diện</a> hoặc tải lên tệp <b>.zip</b> để cài đặt.';
 $lang['admin_themes_none_tip'] = 'Ứng dụng này đang chạy mà không có giao diện. Hãy cài đặt một giao diện để tùy chỉnh giao diện công khai.';
 
@@ -306,12 +315,65 @@ $lang['admin_languages_enable_confirm'] = 'Bạn có chắc chắn muốn kích 
 $lang['admin_languages_enable_error'] = 'Không thể kích hoạt ngôn ngữ.';
 $lang['admin_languages_enable_error_nochange'] = 'Ngôn ngữ này đã được kích hoạt.';
 $lang['admin_languages_enable_success'] = 'Ngôn ngữ đã được kích hoạt thành công.';
+$lang['admin_languages_install_confirm'] = 'Bạn có chắc chắn muốn cài đặt ngôn ngữ này không?';
+$lang['admin_languages_install_error'] = 'Cài đặt ngôn ngữ không thành công.';
+$lang['admin_languages_install_success'] = 'Ngôn ngữ đã được cài đặt thành công.';
 $lang['admin_languages_install_tip'] = 'Ngôn ngữ thêm bản dịch cho giao diện và nội dung của trang web của bạn. Duyệt các ngôn ngữ có sẵn trong <a href="%s" target="_blank" rel="noopener">thư mục ngôn ngữ</a> hoặc tải lên một gói <b>.zip</b> để cài đặt ngôn ngữ của riêng bạn.';
 $lang['admin_languages_tip'] = 'Bật, tắt và đặt ngôn ngữ mặc định cho trang web. Các ngôn ngữ đã bật sẽ có sẵn cho khách truy cập.';
 
 /**
  * ---------------------------------------------------------------
- * Updates & License Section
+ * Package Driver & Installation Messages
+ * ---------------------------------------------------------------
+ * Language lines for package installation, download, backup, and validation.
+ */
+$lang['package_already_exists'] = 'Gói này đã tồn tại.';
+$lang['package_archive_download_failed'] = 'Không thể tải xuống gói lưu trữ.';
+$lang['package_backup_create_error'] = 'Tạo bản sao lưu gói thất bại.';
+$lang['package_backup_dir_failed'] = 'Không thể tạo thư mục sao lưu %s';
+$lang['package_backup_missing'] = 'Tệp sao lưu không tồn tại.';
+$lang['package_backup_path_error'] = 'Không thể xác định đường dẫn tệp sao lưu.';
+$lang['package_backup_request_invalid'] = 'Yêu cầu sao lưu không hợp lệ.';
+$lang['package_backup_restore_error'] = 'Khôi phục bản sao lưu gói thất bại.';
+$lang['package_catalog_type_unknown'] = 'Loại danh mục không xác định.';
+$lang['package_checksum_error'] = 'Xác minh mã kiểm tra (checksum) của gói thất bại.';
+$lang['package_copy_files_error'] = 'Sao chép tệp gói vào thư mục đích thất bại.';
+$lang['package_copy_updates_error'] = 'Sao chép tệp cập nhật vào thư mục đích thất bại.';
+$lang['package_dest_dir_failed'] = 'Không thể tạo thư mục đích %s';
+$lang['package_destination_error'] = 'Không thể xác định đích đến của gói.';
+$lang['package_download_dir_failed'] = 'Không thể tạo thư mục tải xuống %s';
+$lang['package_download_empty'] = 'Tải xuống gói trả về phản hồi trống.';
+$lang['package_download_request_invalid'] = 'Yêu cầu tải xuống gói không hợp lệ.';
+$lang['package_extract_failed'] = 'Không thể giải nén ZIP %s';
+$lang['package_invalid_lang_files'] = 'Ngôn ngữ không hợp lệ — thiếu các tệp ngôn ngữ ứng dụng bắt buộc.';
+$lang['package_invalid_lang_structure'] = 'Ngôn ngữ không hợp lệ — thiếu thư mục admin và/hoặc ci3.';
+$lang['package_invalid_missing_info'] = '%s không hợp lệ: thiếu "info.php".';
+$lang['package_invalid_module_structure'] = 'Module không hợp lệ — thiếu các thư mục config và/hoặc controllers bắt buộc.';
+$lang['package_invalid_plugin_boot'] = 'Plugin không hợp lệ — thiếu "boot.php".';
+$lang['package_invalid_plugin_contents'] = 'Plugin không hợp lệ — plugin không được chứa controllers hoặc views.';
+$lang['package_invalid_theme_boot'] = 'Giao diện (theme) không hợp lệ — thiếu "boot.php".';
+$lang['package_invalid_theme_views'] = 'Giao diện (theme) không hợp lệ — thiếu thư mục views.';
+$lang['package_no_root_dir'] = 'Gói không chứa thư mục gốc (root directory).';
+$lang['package_not_downloadable'] = 'Gói này không cho phép tải xuống công khai.';
+$lang['package_not_in_registry'] = 'Gói không có sẵn trong kho lưu trữ công khai.';
+$lang['package_request_invalid'] = 'Yêu cầu gói không hợp lệ.';
+$lang['package_rollback_request_invalid'] = 'Yêu cầu quay lại phiên bản trước (rollback) không hợp lệ.';
+$lang['package_root_mismatch'] = 'Thư mục gốc của gói lưu trữ không khớp với %s';
+$lang['package_single_root_required'] = 'Gói phải chứa chính xác một thư mục gốc.';
+$lang['package_source_error'] = 'Không thể xác định nguồn của gói.';
+$lang['package_system_core_restricted'] = 'Các thành phần hệ thống không thể được cài đặt dưới dạng gói.';
+$lang['package_temp_dir_failed'] = 'Không thể tạo thư mục tạm thời %s';
+$lang['package_type_unknown'] = 'Loại gói không xác định.';
+$lang['package_update_request_invalid'] = 'Yêu cầu cập nhật gói không hợp lệ.';
+$lang['package_update_root_mismatch'] = 'Thư mục gốc của bản cập nhật lưu trữ không khớp với %s.';
+$lang['package_upload_dir_failed'] = 'Không thể tạo thư mục tải lên %s';
+$lang['package_url_invalid'] = 'URL phân phối gói không hợp lệ.';
+$lang['package_write_failed'] = 'Không thể ghi gói vào %s';
+$lang['package_zip_not_found'] = 'Gói ZIP không tồn tại: %s';
+
+/**
+ * ---------------------------------------------------------------
+ * Updates Section
  * ---------------------------------------------------------------
  * Language lines for updates section.
  */
