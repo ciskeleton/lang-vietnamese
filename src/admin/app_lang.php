@@ -100,7 +100,6 @@ $lang['admin_database_prune_success'] = 'Cơ sở dữ liệu đã được dọ
  * ---------------------------------------------------------------
  * Language lines for the system logs section.
  */
-$lang['admin_logs_delete'] = 'Xóa Nhật Ký';
 $lang['admin_logs_delete_confirm'] = 'Bạn có chắc chắn muốn xóa các tệp nhật ký đã chọn?';
 $lang['admin_logs_delete_error'] = 'Không thể xóa các tệp nhật ký.';
 $lang['admin_logs_delete_success'] = 'Tệp nhật ký đã được xóa thành công.';
